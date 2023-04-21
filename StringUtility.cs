@@ -1,6 +1,6 @@
 
 public class Convertidor {
-    public static string ConvertirAMayusculas(string palabra) {
-        return palabra.ToUpper();
+    public static string ConvertirAMayusculas(string word) {
+        return word.ToUpper();
     }
 }
