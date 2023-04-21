@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+string input = "Holaaa y adios";
+string content = File.ReadAllText(input);
+string longestWord = GetLongestWord.LongestWord(content);
+Console.WriteLine("Longest word: " + longestWord);
