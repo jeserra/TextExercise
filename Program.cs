@@ -1,17 +1,24 @@
 ﻿
 // Encuentra la palabra mas larga
-public static string LongestWord(string input)
+Console.Write("Ingresa un texto: ");
+string input = Console.ReadLine();
+string longestWord = GetLongestWord.LongestWord(input);
+Console.WriteLine($"La palabra mas larga es: {longestWord}");
+class GetLongestWord
 {
-    string[] words = input.Split(' ');
-    string longestWord = "";
-
-    foreach (string word in words)
+    public static string LongestWord(string input)
     {
-        if (word.Length > longestWord.Length)
-        {
-        longestWord = word;
-        }
-    }
+        string[] words = input.Split(' ');
+        string longestWord = "";
 
-    return longestWord;
+        foreach (string word in words)
+        {
+            if (word.Length > longestWord.Length)
+            {
+                longestWord = word;
+            }
+        }
+
+        return longestWord;
+    }
 }
