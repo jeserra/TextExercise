@@ -1,5 +1,17 @@
 ﻿
-string input = "Holaaa y adios";
-string content = File.ReadAllText(input);
-string longestWord = GetLongestWord.LongestWord(content);
-Console.WriteLine("Longest word: " + longestWord);
+// Encuentra la palabra mas larga
+public static string LongestWord(string input)
+{
+    string[] words = input.Split(' ');
+    string longestWord = "";
+
+    foreach (string word in words)
+    {
+        if (word.Length > longestWord.Length)
+        {
+        longestWord = word;
+        }
+    }
+
+    return longestWord;
+}
