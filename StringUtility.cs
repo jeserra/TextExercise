@@ -27,7 +27,21 @@ public class StringUtility {
 
         return longestWord;
     }
+    public int CountLines(string content) 
+{
+    if (string.IsNullOrEmpty(content))
+    {
+        return 0;
+    }
+
+    string[] lines = content.Split(Environment.NewLine);
+    int count = lines.Length;
+
+    return count;
 }
+} 
+
+
 
 
 
