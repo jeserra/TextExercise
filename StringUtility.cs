@@ -1,4 +1,9 @@
-public class SortWord{
+
+
+public class StringUtility {
+    public static string ConvertirAMayusculas(string word) {
+        return word.ToUpper();
+    }
     public string SortWords(string content){
 
     string[] palabras = content.Split(' ');
@@ -8,3 +13,6 @@ public class SortWord{
     return resultado;
     }
 }
+
+
+
