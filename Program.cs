@@ -23,3 +23,8 @@ string output = sorter.SortWords(input);
 Console.WriteLine($"Palabra original: {input}\n",input);
 Console.WriteLine($"Palabra ordenada alfabéticamente: {output}",output);
 
+// palabra mas corta
+Console.Write("Ingresa un texto: ");
+string input2 = Console.ReadLine();
+string ShortestWord = StringUtility. ShortestWord(input2);
+Console.WriteLine("La palabra mas corta es:" + ShortestWord);

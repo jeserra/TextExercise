@@ -39,6 +39,22 @@ public class StringUtility {
 
     return count;
 }
+ public static string ShortestWord(string input2)
+    {
+        string[] words = input2.Split(' ');
+        string ShortestWord = "";
+
+        foreach (string word in words)
+        {
+            if (word.Length < ShortestWord.Length)
+            {
+                ShortestWord = word;
+            }
+        }
+
+        return ShortestWord;
+    }
+
 } 
 
 
